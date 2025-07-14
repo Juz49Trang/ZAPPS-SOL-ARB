@@ -1,0 +1,18 @@
+{
+  "rpc_endpoint": "https://api.devnet.solana.com",
+  "wallet_path": "test_wallet.json",
+  "usdc_mint": "4zMMC9srt5Ri5X14GAgXhaHii3GnPAEERYPJgZJDncDU",
+  "min_profit_usd": 5.0,
+  "max_position_size": 100.0,
+  "max_price_impact": 0.02,
+  "priority_fee_microlamports": 1000,
+  "max_daily_loss": 20.0,
+  "check_interval": 5,
+  "tokens": {
+    "TEST": {
+      "mint": "TestTokenMint11111111111111111111111111111",
+      "decimals": 9,
+      "min_liquidity": 1000
+    }
+  }
+}

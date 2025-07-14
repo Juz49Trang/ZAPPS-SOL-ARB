@@ -1,0 +1,39 @@
+{
+  "dashboard": {
+    "title": "Solana Arbitrage Bot",
+    "panels": [
+      {
+        "title": "Total Trades",
+        "targets": [
+          {
+            "expr": "arbitrage_trades_total"
+          }
+        ]
+      },
+      {
+        "title": "Profit Distribution",
+        "targets": [
+          {
+            "expr": "histogram_quantile(0.95, arbitrage_profit_usd_bucket)"
+          }
+        ]
+      },
+      {
+        "title": "Active Opportunities",
+        "targets": [
+          {
+            "expr": "arbitrage_opportunities_active"
+          }
+        ]
+      },
+      {
+        "title": "Wallet Balance",
+        "targets": [
+          {
+            "expr": "wallet_balance_usd"
+          }
+        ]
+      }
+    ]
+  }
+}

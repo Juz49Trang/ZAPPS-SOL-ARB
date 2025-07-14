@@ -1,0 +1,48 @@
+{
+  "rpc_endpoint": "https://api.mainnet-beta.solana.com",
+  "wallet_path": "wallet.json",
+  "usdc_mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+  "min_profit_usd": 10.0,
+  "max_position_size": 5000.0,
+  "max_price_impact": 0.01,
+  "priority_fee_microlamports": 10000,
+  "max_daily_loss": 100.0,
+  "check_interval": 5,
+  "use_jito_bundles": true,
+  "jito_block_engine_url": "https://mainnet.block-engine.jito.wtf/api/v1",
+  "jito_tip_lamports": 10000,
+  "jito_tip_percentage": 0.01,
+  "min_profit_for_jito": 50.0,
+  "tokens": {
+    "BONK": {
+      "mint": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+      "decimals": 5,
+      "min_liquidity": 50000
+    },
+    "WIF": {
+      "mint": "EKpQGSJtjMFqKZ9KQanSqYXRcF8fBopzLHYxdM65zcjm",
+      "decimals": 6,
+      "min_liquidity": 100000
+    },
+    "JTO": {
+      "mint": "jtojtomepa8beP8AuQc6eXt5FriJwfFMwQx2v2f9mCL",
+      "decimals": 9,
+      "min_liquidity": 75000
+    },
+    "PYTH": {
+      "mint": "HZ1JovNiVvGrGNiiYvEozEVgZ58xaU3RKwX8eACQBCt3",
+      "decimals": 6,
+      "min_liquidity": 100000
+    },
+    "JUP": {
+      "mint": "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
+      "decimals": 6,
+      "min_liquidity": 100000
+    },
+    "RNDR": {
+      "mint": "rndrizKT3MK1iimdxRdWabcF7Zg7AR5T4nud4EkHBof",
+      "decimals": 8,
+      "min_liquidity": 75000
+    }
+  }
+}

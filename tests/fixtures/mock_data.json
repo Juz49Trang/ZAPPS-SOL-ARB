@@ -1,0 +1,34 @@
+{
+  "test_tokens": {
+    "SOL": {
+      "mint": "So11111111111111111111111111111111111111112",
+      "decimals": 9,
+      "price_usd": 150.0
+    },
+    "BONK": {
+      "mint": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+      "decimals": 5,
+      "price_usd": 0.00002
+    },
+    "WIF": {
+      "mint": "EKpQGSJtjMFqKZ9KQanSqYXRcF8fBopzLHYxdM65zcjm",
+      "decimals": 6,
+      "price_usd": 2.5
+    }
+  },
+  "test_quotes": {
+    "jupiter_sol_usdc": {
+      "inputMint": "So11111111111111111111111111111111111111112",
+      "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+      "inAmount": "1000000000",
+      "outAmount": "150000000",
+      "priceImpactPct": "0.1"
+    }
+  },
+  "test_wallets": {
+    "test_wallet_1": {
+      "public_key": "11111111111111111111111111111111",
+      "secret_key": "5MaiiCavjCmn9Hs1o3eznqDEhRwxo7pXiAYez7keQUviUkauRiTMD8DrESdrNjN8zd9mTmVhRvBJeg5vhyvgrAhG"
+    }
+  }
+}

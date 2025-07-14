@@ -1,0 +1,63 @@
+{
+  "strategies": {
+    "conservative": {
+      "description": "Low risk, stable profits",
+      "min_profit_usd": 15.0,
+      "max_position_size": 1000.0,
+      "max_price_impact": 0.005,
+      "min_liquidity_ratio": 0.05,
+      "enabled_dexs": ["jupiter", "raydium"],
+      "token_categories": ["liquid-staking", "dex"],
+      "max_concurrent_trades": 1
+    },
+    "balanced": {
+      "description": "Balanced risk/reward",
+      "min_profit_usd": 10.0,
+      "max_position_size": 3000.0,
+      "max_price_impact": 0.01,
+      "min_liquidity_ratio": 0.1,
+      "enabled_dexs": ["jupiter", "raydium", "orca"],
+      "token_categories": ["liquid-staking", "dex", "oracle"],
+      "max_concurrent_trades": 2
+    },
+    "aggressive": {
+      "description": "Higher risk, higher rewards",
+      "min_profit_usd": 5.0,
+      "max_position_size": 5000.0,
+      "max_price_impact": 0.015,
+      "min_liquidity_ratio": 0.15,
+      "enabled_dexs": ["jupiter", "raydium", "orca", "meteora"],
+      "token_categories": ["all"],
+      "max_concurrent_trades": 3
+    },
+    "meme_hunter": {
+      "description": "Focus on volatile meme coins",
+      "min_profit_usd": 20.0,
+      "max_position_size": 500.0,
+      "max_price_impact": 0.02,
+      "min_liquidity_ratio": 0.05,
+      "enabled_dexs": ["jupiter", "raydium"],
+      "token_categories": ["meme"],
+      "max_concurrent_trades": 1,
+      "special_rules": {
+        "min_price_diff_pct": 2.0,
+        "max_hold_time_seconds": 30
+      }
+    }
+  },
+  "active_strategy": "balanced",
+  "risk_parameters": {
+    "max_daily_trades": 100,
+    "max_hourly_trades": 20,
+    "cooldown_after_loss_seconds": 300,
+    "stop_after_consecutive_losses": 3,
+    "max_gas_fee_usd": 5.0
+  },
+  "execution_parameters": {
+    "use_jito_bundles": false,
+    "priority_fee_preset": "medium",
+    "slippage_tolerance_bps": 100,
+    "transaction_timeout_seconds": 30,
+    "confirmation_commitment": "confirmed"
+  }
+}

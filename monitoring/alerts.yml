@@ -1,0 +1,20 @@
+groups:
+  - name: arbitrage_alerts
+    rules:
+      - alert: LowWalletBalance
+        expr: wallet_balance_usd < 100
+        for: 5m
+        annotations:
+          summary: "Low wallet balance: {{ $value }}"
+      
+      - alert: NoTradesExecuted
+        expr: rate(arbitrage_trades_total[1h]) == 0
+        for: 2h
+        annotations:
+          summary: "No trades executed in 2 hours"
+      
+      - alert: HighFailureRate
+        expr: rate(arbitrage_trades_failed[5m]) > 0.5
+        for: 10m
+        annotations:
+          summary: "High trade failure rate"
